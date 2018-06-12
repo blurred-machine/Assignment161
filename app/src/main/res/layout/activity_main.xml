@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/mySaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="add data" />
+
+    <Button
+        android:id="@+id/myDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="delete" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Contents of the file:"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/myVisibleTextView"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:background="#aaccee"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold|italic" />
+    </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/myProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
